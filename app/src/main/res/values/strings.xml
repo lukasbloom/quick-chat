@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quick WA</string>
+    <string name="action_open_in_whatsapp">Open in WhatsApp</string>
+    <string name="error_no_number">No valid phone number found</string>
+    <string name="error_whatsapp_missing">WhatsApp not installed</string>
+</resources>

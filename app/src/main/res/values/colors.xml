@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Bleed color for adaptive icon — matches the dark stop of the
+         deep-purple gradient used in the icon artwork. -->
+    <color name="ic_launcher_background">#312E81</color>
+</resources>
