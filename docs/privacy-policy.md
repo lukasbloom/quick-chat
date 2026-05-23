@@ -55,5 +55,3 @@ If this policy changes, the updated version will be published at this URL and th
 ## Contact
 
 Questions about this policy: **lucas.ariel.barros@gmail.com**
-
-Source code: [github.com/lukasbloom/quick-wa](https://github.com/lukasbloom/quick-wa)
