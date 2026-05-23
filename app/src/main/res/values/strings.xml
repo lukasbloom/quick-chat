@@ -4,4 +4,7 @@
     <string name="action_open_in_whatsapp">Open in WhatsApp</string>
     <string name="error_no_number">No valid phone number found</string>
     <string name="error_whatsapp_missing">WhatsApp not installed</string>
+
+    <string name="about_howto">1. Select a phone number anywhere on your phone.\n2. Tap “Open in WhatsApp” in the text-selection menu.\n3. WhatsApp opens straight to that chat.\n\nNo contacts are saved. No data leaves your device.</string>
+    <string name="about_open_settings">App info &amp; uninstall</string>
 </resources>
