@@ -6,7 +6,7 @@ title: Privacy Policy — QuickChat
 # Privacy Policy — QuickChat
 
 - **Effective date:** 2026-05-23
-- **Developer:** Lucas Barros (contact: lucas.ariel.barros@gmail.com)
+- **Developer:** Lucas Barros (contact: lucas.ariel.barros+quickchat@gmail.com)
 - **App package:** `io.github.lukasbloom.quickchat`
 
 ## TL;DR
@@ -54,4 +54,4 @@ If this policy changes, the updated version will be published at this URL and th
 
 ## Contact
 
-Questions about this policy: **lucas.ariel.barros@gmail.com**
+Questions about this policy: **lucas.ariel.barros+quickchat@gmail.com**
