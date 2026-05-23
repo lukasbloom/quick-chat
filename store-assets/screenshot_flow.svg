@@ -1,0 +1,94 @@
+<?xml version="1.0" standalone="no"?>
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="1080" height="2340" viewBox="0 0 1080 2340"
+ preserveAspectRatio="xMidYMid meet">
+
+<defs>
+  <linearGradient id="bg" gradientUnits="userSpaceOnUse"
+      x1="0" y1="0" x2="1080" y2="2340">
+    <stop offset="0" stop-color="#6D28D9"/>
+    <stop offset="1" stop-color="#312E81"/>
+  </linearGradient>
+  <linearGradient id="card" gradientUnits="userSpaceOnUse"
+      x1="0" y1="0" x2="0" y2="900">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="1" stop-color="#F8FAFC"/>
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<rect x="0" y="0" width="1080" height="2340" fill="url(#bg)"/>
+
+<!-- Headline -->
+<text x="540" y="280" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-weight="800" font-size="92" fill="#FFFFFF">Tap. Chat.</text>
+
+<text x="540" y="380" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-weight="400" font-size="46" fill="#C7D2FE">Select any phone number. We do the rest.</text>
+
+<!-- "Phone screen" mock card -->
+<rect x="120" y="540" width="840" height="1180" rx="48" ry="48" fill="url(#card)"/>
+
+<!-- App bar -->
+<rect x="120" y="540" width="840" height="120" rx="48" ry="48" fill="#EEF2FF"/>
+<rect x="120" y="608" width="840" height="52" fill="#EEF2FF"/>
+<text x="180" y="616" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-weight="600" font-size="36" fill="#1F2937">📝  Notes</text>
+
+<!-- Note content -->
+<text x="180" y="780"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="40" fill="#1F2937">From Maria:</text>
+
+<text x="180" y="870"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="40" fill="#1F2937">Hey, llámame cuando puedas al</text>
+
+<!-- Highlighted (selected) phone number -->
+<rect x="172" y="920" width="430" height="70" fill="#A5B4FC" opacity="0.55"/>
+<text x="180" y="975"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-weight="700" font-size="44" fill="#1F2937">+34 612 33 44 55</text>
+
+<!-- Selection handles -->
+<circle cx="172" cy="990" r="14" fill="#6366F1"/>
+<circle cx="602" cy="990" r="14" fill="#6366F1"/>
+
+<!-- Text-selection floating menu -->
+<rect x="200" y="1060" width="700" height="140" rx="20" ry="20" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+
+<text x="245" y="1148" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="36" fill="#9CA3AF">Copy</text>
+<text x="395" y="1148" font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="36" fill="#9CA3AF">Share</text>
+
+<!-- Our action (highlighted) -->
+<rect x="540" y="1080" width="340" height="100" rx="14" ry="14" fill="#6D28D9"/>
+<text x="710" y="1148" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-weight="700" font-size="36" fill="#FFFFFF">Open in WhatsApp</text>
+
+<!-- Arrow pointing down to the menu -->
+<text x="540" y="1290" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="50" fill="#FFFFFF">↓</text>
+
+<!-- After: WhatsApp opens -->
+<text x="540" y="1380" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-weight="600" font-size="46" fill="#FFFFFF">WhatsApp opens to that chat.</text>
+
+<!-- Bullets at the bottom -->
+<text x="540" y="1530" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="38" fill="#A5B4FC">No contacts saved.</text>
+<text x="540" y="1590" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="38" fill="#A5B4FC">No data leaves your phone.</text>
+<text x="540" y="1650" text-anchor="middle"
+      font-family="Helvetica Neue, Helvetica, Arial, sans-serif"
+      font-size="38" fill="#A5B4FC">No country code typing.</text>
+
+</svg>

@@ -7,3 +7,10 @@ local.properties
 captures/
 .cxx/
 .kotlin/
+
+# Generated build outputs
+app/build/
+*.aab
+
+# Local environment overrides
+local.properties
