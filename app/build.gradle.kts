@@ -10,18 +10,36 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.quickwa"
+        applicationId = "io.github.lukasbloom.quickchat"
         minSdk = 23
         targetSdk = 34
         versionCode = 1
         versionName = "0.1.0"
     }
 
+    // Release signing credentials are read from ~/.gradle/gradle.properties
+    // (or passed via env / -P at build time). They're absent in CI and on
+    // fresh checkouts; the resolution below falls back to debug signing in
+    // that case so `assembleDebug` / unit tests always work.
+    val keystoreFile: String? = (project.findProperty("QUICKCHAT_KEYSTORE_PATH") as String?)
+        ?: System.getenv("QUICKCHAT_KEYSTORE_PATH")
+    val keystorePassword: String? = (project.findProperty("QUICKCHAT_KEYSTORE_PASSWORD") as String?)
+        ?: System.getenv("QUICKCHAT_KEYSTORE_PASSWORD")
+    val keyAlias: String? = (project.findProperty("QUICKCHAT_KEY_ALIAS") as String?)
+        ?: System.getenv("QUICKCHAT_KEY_ALIAS") ?: "release"
+    val keyPassword: String? = (project.findProperty("QUICKCHAT_KEY_PASSWORD") as String?)
+        ?: System.getenv("QUICKCHAT_KEY_PASSWORD") ?: keystorePassword
+    val hasReleaseSigning = keystoreFile != null && keystorePassword != null
+
     signingConfigs {
-        // Allow `assembleRelease` to produce a signed APK for local verification
-        // without requiring a release keystore. CI / Play Store builds should
-        // override this with a real signing config.
-        getByName("debug")
+        if (hasReleaseSigning) {
+            create("release") {
+                storeFile = file(keystoreFile!!)
+                storePassword = keystorePassword
+                this.keyAlias = keyAlias
+                this.keyPassword = keyPassword
+            }
+        }
     }
 
     buildTypes {
@@ -32,7 +50,11 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = if (hasReleaseSigning) {
+                signingConfigs.getByName("release")
+            } else {
+                signingConfigs.getByName("debug")
+            }
         }
         debug {
             applicationIdSuffix = ".debug"
