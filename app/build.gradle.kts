@@ -7,13 +7,13 @@ plugins {
 
 android {
     namespace = "com.quickwa"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "io.github.lukasbloom.quickchat"
         minSdk = 23
-        targetSdk = 34
-        versionCode = 1
+        targetSdk = 35
+        versionCode = 2
         versionName = "0.1.0"
     }
 
